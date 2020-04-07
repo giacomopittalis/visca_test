@@ -11,7 +11,6 @@
 	$string_to_array=json_decode(html_entity_decode($events_string), true);
 	
 	$json_games=[];
-	$game_options=[];
 	
 	foreach ($string_to_array['games'] as $i=>$game) {
 		foreach ($game['betTypeGroups'] as $bet_type_group) {
